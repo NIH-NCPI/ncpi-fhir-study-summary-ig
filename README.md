@@ -1,2 +1,3 @@
-# ncpi-fhir-study-summary-ig
-Implementation Guide governing storage of Summary Data in FHIR
+# NCPI FHIR Study Summary Implmentation Guide
+Profiles and guidelines for storing Data-Dictionaries, Summary Statistics and other forms of Study Meta-data in FHIR. 
+
