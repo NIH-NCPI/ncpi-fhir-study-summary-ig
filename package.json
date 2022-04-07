@@ -1,0 +1,26 @@
+{
+ "name": "ncpi-fhir-study-summary-ig",
+ "version" : "0.1.0",  
+ "canonical" : "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig",
+ "url" : "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig",
+ "title" : "NCPI FHIR Study Summary IG",
+ "description": "FHIR Implementation Guide for NCPI Study Summary Metadata",
+ "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.us.core": "3.1.0"
+ },
+ "keywords": [
+   "NCPI",
+   "Kids First",   
+   "BioInformatics"
+ ],
+ "language": "en",
+ "author": "NCPI",
+ "maintainers": [
+   {
+     "name": "TBD",
+     "email": "tbd@tbd.org"
+   }
+ ],
+ "license": "CC0-1.0"
+}
