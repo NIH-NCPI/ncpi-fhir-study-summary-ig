@@ -1,0 +1,9 @@
+{
+  "resourceType": "Patient",
+  "id": "example-sum-patient-2",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Anonymous Patient</b> male, DoB Unknown</p></div>"
+  },
+  "gender": "male"
+}

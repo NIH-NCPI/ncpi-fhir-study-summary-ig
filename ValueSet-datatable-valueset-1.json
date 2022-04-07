@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "datatable-valueset-1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-datatable-codesystem-1.html\"><code>http://example.org/my-dataset/fhir/codesystem/demographics-table</code></a></li></ul></div>"
+  },
+  "url": "http://example.org/my-dataset/fhir/valueset/demographics-table",
+  "version": "0.1.0",
+  "name": "ExampleStudyTableVS1",
+  "title": "Table ValueSet",
+  "status": "draft",
+  "date": "2022-04-07T22:04:04+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/include-dcc"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Example Data Table with 4 variables",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/my-dataset/fhir/codesystem/demographics-table"
+      }
+    ]
+  }
+}

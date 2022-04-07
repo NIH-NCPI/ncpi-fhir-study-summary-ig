@@ -1,0 +1,77 @@
+[
+  {
+    "id": "dataset-codesystem-1",
+    "type": "CodeSystem",
+    "url": "http://example.org/my-dataset/fhir/codesystem/dataset",
+    "version": "0.1.0",
+    "name": "ExampleStudyDatasetCS1"
+  },
+  {
+    "id": "datatable-codesystem-1",
+    "type": "CodeSystem",
+    "url": "http://example.org/my-dataset/fhir/codesystem/demographics-table",
+    "version": "0.1.0",
+    "name": "ExampleStudyTableCS1"
+  },
+  {
+    "id": "example-study-dd-conceptmap-1",
+    "type": "ConceptMap",
+    "url": "http://example.org/my-dataset/fhir/conceptmap/data-to-public",
+    "version": "0.1.0"
+  },
+  {
+    "id": "datatable-valueset-1",
+    "type": "ValueSet",
+    "url": "http://example.org/my-dataset/fhir/valueset/demographics-table",
+    "version": "0.1.0",
+    "name": "ExampleStudyTableVS1"
+  },
+  {
+    "id": "datatable-mappings-valueset-1",
+    "type": "ValueSet",
+    "url": "http://example.org/my-dataset/fhir/valueset/mappings",
+    "version": "0.1.0",
+    "name": "ExampleStudyTableMappingsVS1"
+  },
+  {
+    "id": "example-study-dd-table-1",
+    "type": "ActivityDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ActivityDefinition/example-study-dd-table-1",
+    "version": "0.1.0"
+  },
+  {
+    "id": "NCPI-FHIR-Study-Summary-IG",
+    "type": "ImplementationGuide",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ImplementationGuide/NCPI-FHIR-Study-Summary-IG",
+    "version": "0.1.0",
+    "name": "NCPIFHIRStudySummaryIG"
+  },
+  {
+    "id": "study-dd-table",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-table",
+    "version": "0.1.0",
+    "name": "StudyDdTable"
+  },
+  {
+    "id": "study-dd-variable",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-variable",
+    "version": "0.1.0",
+    "name": "StudyDdVariable"
+  },
+  {
+    "id": "summary-observation",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation",
+    "version": "0.1.0",
+    "name": "SummaryObservation"
+  },
+  {
+    "id": "example-case-control-vs-1",
+    "type": "ValueSet",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ValueSet/example-case-control-vs-1",
+    "version": "0.1.0",
+    "name": "ExampleCaseControlVS1"
+  }
+]

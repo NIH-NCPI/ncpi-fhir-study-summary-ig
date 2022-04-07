@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "dataset-codesystem-1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://example.org/my-dataset/fhir/codesystem/dataset defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">demographics<a name=\"dataset-codesystem-1-demographics\"> </a></td></tr></table></div>"
+  },
+  "url": "http://example.org/my-dataset/fhir/codesystem/dataset",
+  "version": "0.1.0",
+  "name": "ExampleStudyDatasetCS1",
+  "title": "Dataset CodeSystem (lists all tables)",
+  "status": "active",
+  "date": "2022-04-07T22:04:04+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/include-dcc"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Example Dataset with 1 table and 4 variables",
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "demographics"
+    }
+  ]
+}

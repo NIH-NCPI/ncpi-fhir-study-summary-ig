@@ -1,0 +1,80 @@
+﻿NCPIFHIRStudySummaryIG : Validation Results
+=========================================
+
+err = 0, warn = 11, info = 11
+IG Publisher Version: 1.1.114
+Generated Thu Apr 07 22:04:26 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
+ Build Errors : 0 / 0 / 0
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ActivityDefinition-example-study-dd-table-1 : 0 / 2 / 2
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/CodeSystem-dataset-codesystem-1 : 0 / 0 / 2
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/CodeSystem-datatable-codesystem-1 : 0 / 0 / 2
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ConceptMap-example-study-dd-conceptmap-1 : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Condition-example-rl-condition-1 : 0 / 1 / 4
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Group-example-summary-group-1 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Study-Summary-IG : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Observation-example-rl-observation-1 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Observation-example-summary-gender : 0 / 0 / 4
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-1 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-2 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-3 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-4 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-5 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-1 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-2 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-3 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-4 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-table : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-variable : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-summary-observation : 0 / 0 / 3
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-datatable-mappings-valueset-1 : 0 / 4 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-datatable-valueset-1 : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-example-case-control-vs-1 : 0 / 2 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/ActivityDefinition-example-study-dd-table-1.json ==
+WARNING: ActivityDefinition/example-study-dd-table-1: ActivityDefinition: adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+INFORMATION: ActivityDefinition/example-study-dd-table-1: ActivityDefinition.topic[0].coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+WARNING: ActivityDefinition/example-study-dd-table-1: ActivityDefinition.code.coding[0]: Display Name for http://example.org/my-dataset/fhir/codesystem/dataset#demographics should be one of '' instead of 'Demographic data' for 'http://example.org/my-dataset/fhir/codesystem/dataset#demographics'
+== fsh-generated/resources/CodeSystem-dataset-codesystem-1.json ==
+INFORMATION: CodeSystem/dataset-codesystem-1: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-datatable-codesystem-1.json ==
+INFORMATION: CodeSystem/datatable-codesystem-1: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/ConceptMap-example-study-dd-conceptmap-1.json ==
+WARNING: ConceptMap/example-study-dd-conceptmap-1: ConceptMap: cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Condition-example-rl-condition-1.json ==
+WARNING: Condition/example-rl-condition-1: Condition.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Condition/example-rl-condition-1: Condition.code.coding[0]: Code System URI 'http://purl.obolibrary.org/obo/hp.owl' is unknown so the code cannot be validated
+INFORMATION: Condition/example-rl-condition-1: Condition.code.coding[1]: Code System URI 'http://purl.obolibrary.org/obo/mondo.owl' is unknown so the code cannot be validated
+INFORMATION: Condition/example-rl-condition-1: Condition.code.coding[2]: Code System URI 'http://purl.obolibrary.org/obo/mondo.owl' is unknown so the code cannot be validated
+== fsh-generated/resources/Group-example-summary-group-1.json ==
+== fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Study-Summary-IG.json ==
+WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[2].description: value should not start or finish with whitespace 'An...on.
+'
+== fsh-generated/resources/Observation-example-rl-observation-1.json ==
+== fsh-generated/resources/Observation-example-summary-gender.json ==
+INFORMATION: Observation/example-summary-gender: Observation.code.coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/example-summary-gender: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/example-summary-gender: Observation.component[2].code.coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-1.json ==
+== fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-2.json ==
+== fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-3.json ==
+== fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-4.json ==
+== fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-5.json ==
+== fsh-generated/resources/Patient-example-sum-patient-1.json ==
+== fsh-generated/resources/Patient-example-sum-patient-2.json ==
+== fsh-generated/resources/Patient-example-sum-patient-3.json ==
+== fsh-generated/resources/Patient-example-sum-patient-4.json ==
+== fsh-generated/resources/StructureDefinition-study-dd-table.json ==
+== fsh-generated/resources/StructureDefinition-study-dd-variable.json ==
+== fsh-generated/resources/StructureDefinition-summary-observation.json ==
+INFORMATION: StructureDefinition/summary-observation: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/summary-observation: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/ValueSet-datatable-mappings-valueset-1.json ==
+WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet.compose[0].include[2]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet.compose[0].include[3]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'datatable-mappings-valueset-1'): Error from server: Unable to provide support for code system https://uts.nlm.nih.gov/uts/umls
+== fsh-generated/resources/ValueSet-datatable-valueset-1.json ==
+== fsh-generated/resources/ValueSet-example-case-control-vs-1.json ==
+WARNING: ValueSet/example-case-control-vs-1: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'example-case-control-vs-1'): Error from server: Unable to provide support for code system https://uts.nlm.nih.gov/uts/umls

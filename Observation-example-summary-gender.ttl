@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Observation/example-summary-gender> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-summary-gender"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation";
+       fhir:index 0;
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-summary-gender\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-summary-observation.html\">Summary Observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Summary Report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (umls#C0242482)</span></p><p><b>subject</b>: <a href=\"Group-example-summary-group-1.html\">Group/example-summary-group-1</a></p><p><b>value</b>: Gender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (umls#C0079399; <a href=\"CodeSystem-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#gender)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Female <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender</a>#female)</span></p><p><b>value</b>: 2</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender</a>#male)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Missing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (umls#C1705492)</span></p><p><b>value</b>: 1</p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Coding.code [ fhir:value "C0242482" ];
+       fhir:Coding.display [ fhir:value "Summary Report" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Group/example-summary-group-1>;
+     fhir:Reference.reference [ fhir:value "Group/example-summary-group-1" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Coding.code [ fhir:value "C0079399" ];
+       fhir:Coding.display [ fhir:value "Gender" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://example.org/my-dataset/fhir/codesystem/demographics-table" ];
+       fhir:Coding.code [ fhir:value "gender" ]
+     ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ];
+         fhir:Coding.code [ fhir:value "female" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "2"^^xsd:integer ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ];
+         fhir:Coding.code [ fhir:value "male" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "1"^^xsd:integer ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C1705492" ];
+         fhir:Coding.display [ fhir:value "Missing" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "1"^^xsd:integer ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Observation/example-summary-gender.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

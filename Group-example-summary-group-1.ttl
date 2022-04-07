@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Group/example-summary-group-1> a fhir:Group;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-summary-group-1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-summary-group-1\" </p></div><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>quantity</b>: 4</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-example-sum-patient-1.html\">Patient/example-sum-patient-1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-example-sum-patient-2.html\">Patient/example-sum-patient-2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-example-sum-patient-3.html\">Patient/example-sum-patient-3</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-example-sum-patient-4.html\">Patient/example-sum-patient-4</a></p></blockquote></div>"
+  ];
+  fhir:Group.type [ fhir:value "person"];
+  fhir:Group.actual [ fhir:value "true"^^xsd:boolean];
+  fhir:Group.quantity [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:Group.member [
+     fhir:index 0;
+     fhir:Group.member.entity [
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Patient/example-sum-patient-1>;
+       fhir:Reference.reference [ fhir:value "Patient/example-sum-patient-1" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Group.member.entity [
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Patient/example-sum-patient-2>;
+       fhir:Reference.reference [ fhir:value "Patient/example-sum-patient-2" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Group.member.entity [
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Patient/example-sum-patient-3>;
+       fhir:Reference.reference [ fhir:value "Patient/example-sum-patient-3" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Group.member.entity [
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Patient/example-sum-patient-4>;
+       fhir:Reference.reference [ fhir:value "Patient/example-sum-patient-4" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Group/example-summary-group-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

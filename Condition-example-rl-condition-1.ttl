@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Condition/example-rl-condition-1> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-rl-condition-1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-rl-condition-1\" </p></div><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: encounter-diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#encounter-diagnosis)</span></p><p><b>code</b>: Anomalous pulmonary venous return <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (hp.owl#0010772; mondo.owl#0017705 \"congenital pulmonary venous return anomaly\"; mondo.owl#0007130 \"congenital total pulmonary venous return anomaly\"; <a href=\"CodeSystem-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#status \"Subject's status (Case or Control)\")</span></p><p><b>subject</b>: <a href=\"Patient-example-sum-patient-1.html\">Patient/example-sum-patient-1</a></p><p><b>note</b>: This is an example of linking an otherwise standard FHIR Condition back to it's source variable using the value's Code as one of the code.codings</p></div>"
+  ];
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "encounter-diagnosis" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://purl.obolibrary.org/obo/hp.owl" ];
+       fhir:Coding.code [ fhir:value "0010772" ];
+       fhir:Coding.display [ fhir:value "Anomalous pulmonary venous return" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://purl.obolibrary.org/obo/mondo.owl" ];
+       fhir:Coding.code [ fhir:value "0017705" ];
+       fhir:Coding.display [ fhir:value "congenital pulmonary venous return anomaly" ]
+     ], [
+       fhir:index 2;
+       fhir:Coding.system [ fhir:value "http://purl.obolibrary.org/obo/mondo.owl" ];
+       fhir:Coding.code [ fhir:value "0007130" ];
+       fhir:Coding.display [ fhir:value "congenital total pulmonary venous return anomaly" ]
+     ], [
+       fhir:index 3;
+       fhir:Coding.system [ fhir:value "http://example.org/my-dataset/fhir/codesystem/demographics-table" ];
+       fhir:Coding.code [ fhir:value "status" ];
+       fhir:Coding.display [ fhir:value "Subject's status (Case or Control)" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Patient/example-sum-patient-1>;
+     fhir:Reference.reference [ fhir:value "Patient/example-sum-patient-1" ]
+  ];
+  fhir:Condition.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "This is an example of linking an otherwise standard FHIR Condition back to it's source variable using the value's Code as one of the code.codings" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Condition/example-rl-condition-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
