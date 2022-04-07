@@ -10,3 +10,4 @@ The key concepts include:
 * Profile to enforce basic rules and guidence on proving support for summary data in FHIR
 * Guidance on linking row-level data back to Data Dictionary elements like Study Variables and their Codes
 
+The current version of the IG can be viewed [here](https://nih-ncpi.github.io/ncpi-fhir-study-summary-ig/).
