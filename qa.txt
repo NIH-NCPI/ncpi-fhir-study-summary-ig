@@ -3,7 +3,7 @@
 
 err = 0, warn = 11, info = 11
 IG Publisher Version: 1.1.114
-Generated Thu Apr 07 22:04:26 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
+Generated Thu Apr 07 22:05:20 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
  Build Errors : 0 / 0 / 0
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ActivityDefinition-example-study-dd-table-1 : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/CodeSystem-dataset-codesystem-1 : 0 / 0 / 2
