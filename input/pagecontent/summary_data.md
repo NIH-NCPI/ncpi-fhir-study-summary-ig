@@ -3,7 +3,9 @@
 To help clarify a dataset's contents, data summaries can be provided using the profiles, [VariableSummary](StructureDefinition-variable-summary.html){:target="_blank"} and [StudySummary](StructureDefinition-study-summary.html){:target="_blank"}. 
 
 ##### Variable Summary
-These should be annotated as summary observations using the appropriate coding in addition to whichever codes may apply such as public ontological terms that apply when summarizing a particular variable's content as well as the reference back to the data-dictionary either through code or focus pointing to a reference of the StudyVariable itself.  
+These should be annotated as summary observations using the appropriate coding in addition to whichever codes may apply include:
+* public ontological terms that apply when summarizing a particular variable's content.
+* and/or a reference back to the data-dictionary either through code or focus pointing to a reference of the StudyVariable itself.  
 
 The profile, [VariableSummary](StructureDefinition-variable-summary.html){:target="_blank"}, adds the requirement that there be a meaningful code added to valueCodeableConcept. This code should describe the variable being summarized. 
 
