@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NCPIFHIRStudySummaryIG"];
   fhir:ImplementationGuide.title [ fhir:value "NCPI FHIR Study Summary IG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-07T22:04:54+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-08T17:59:04+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -356,14 +356,28 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/summary-observation" ]
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/study-summary" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary Observation" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation containing summary data associated with research data from FHIR\n\nThe code _MUST_ indicate that it is a summary and the subject _MUST_ point to the group of \nparticipants to which the observation is based on.\n" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Study Summary" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation containing summary data associated with research data from FHIR\n\nThe code _MUST_ indicate that it is a summary and the subject _MUST_ point to the group of \nparticipants if the summary doesn't pertain to the entire study. \n\nThe StudySummary _MUST_ reference a study in the focus. \n\n\n" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/variable-summary>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/variable-summary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Variable Summary" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation containing summary data associated with research data from FHIR\n\nThe code _MUST_ indicate that it is a summary and the subject _MUST_ point to the group of \nparticipants to which the observation is based on.\n" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -377,7 +391,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Case/Control values" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -391,7 +405,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Public codes mapped from example dataset\n\nThe codes used below were chosen purely for example's sake and are in no way an endorsement or suggestion for terms that should be used in a real data-dictionary." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -405,7 +419,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Data Table with 4 variables" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -419,7 +433,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Dataset with 1 table and 4 variables" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -433,7 +447,55 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Data Table with 4 variables" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/CodeSystem/ncpi>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ncpi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI FHIR Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes that would apply to NCPI projects" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Observation/anvil-summary-cmg>;
+         fhir:Reference.reference [ fhir:value "Observation/anvil-summary-cmg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary detail for Center for Mendelian Genomics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Summary detail for Center for Mendelian Genomics" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary";
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary>
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Observation/anvil-summary-phs000711>;
+         fhir:Reference.reference [ fhir:value "Observation/anvil-summary-phs000711" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary";
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary>
+       ]
+     ], [
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -447,7 +509,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is an example of linking an otherwise standard FHIR Condition back to it's source variable using the value's Code as one of the code.codings" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -461,7 +523,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is an otherwise ordinary Observation except for a few extra bits linking the observation back to its variable from the data-dictionary. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found. More importantly, we can directly link the observation back to the ObservationDefinition if the focus isn't otherwise needed." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -475,7 +537,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data Harmonization for example dataset" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -492,7 +554,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-table>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -509,7 +571,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-variable>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -526,7 +588,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-variable>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -543,7 +605,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-variable>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -560,7 +622,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-variable>
        ]
      ], [
-       fhir:index 16;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -577,7 +639,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-variable>
        ]
      ], [
-       fhir:index 17;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -591,7 +653,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Patient with a small number of observations" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -605,7 +667,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Patient with no observations...just for group example" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -619,7 +681,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Patient with no observations...just for group example" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -633,7 +695,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Patient with no observations...just for group example" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -643,14 +705,14 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/Observation/example-summary-gender>;
          fhir:Reference.reference [ fhir:value "Observation/example-summary-gender" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Summary Observation with categories (gender)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Simple example of a SummaryObservation using components to capture counts of different categories (male, female and missing)" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Variable Summary with categories (gender)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation>
+         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/variable-summary";
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/variable-summary>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -662,6 +724,34 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Group for Summary Results" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "We only have a single patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ResearchStudy/research-study-cmg>;
+         fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-cmg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Center for Mendelian Genomics (CMG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Center for Mendelian Genomics (CMG) - An example of a Multi-Center Study" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ResearchStudy/research-study-phs000711>;
+         fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-phs000711" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Baylor Hopkings Center CMG" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG) - Example Research Study representing a Specific study under the CMG umbrella" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

@@ -10,7 +10,7 @@
   "name": "NCPIFHIRStudySummaryIG",
   "title": "NCPI FHIR Study Summary IG",
   "status": "draft",
-  "date": "2022-04-07T22:04:54+00:00",
+  "date": "2022-04-08T17:59:04+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -373,9 +373,23 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/summary-observation"
+          "reference": "StructureDefinition/study-summary"
         },
-        "name": "Summary Observation",
+        "name": "Study Summary",
+        "description": "An observation containing summary data associated with research data from FHIR\n\nThe code _MUST_ indicate that it is a summary and the subject _MUST_ point to the group of \nparticipants if the summary doesn't pertain to the entire study. \n\nThe StudySummary _MUST_ reference a study in the focus. \n\n\n",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/variable-summary"
+        },
+        "name": "Variable Summary",
         "description": "An observation containing summary data associated with research data from FHIR\n\nThe code _MUST_ indicate that it is a summary and the subject _MUST_ point to the group of \nparticipants to which the observation is based on.\n",
         "exampleBoolean": false
       },
@@ -448,6 +462,48 @@
         "name": "Datatable CodeSystem (lists all variables)",
         "description": "Example Data Table with 4 variables",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ncpi"
+        },
+        "name": "NCPI FHIR Codes",
+        "description": "Codes that would apply to NCPI projects",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/anvil-summary-cmg"
+        },
+        "name": "Summary detail for Center for Mendelian Genomics",
+        "description": "Summary detail for Center for Mendelian Genomics",
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/anvil-summary-phs000711"
+        },
+        "name": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
+        "description": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary"
       },
       {
         "extension": [
@@ -641,9 +697,9 @@
         "reference": {
           "reference": "Observation/example-summary-gender"
         },
-        "name": "Example Summary Observation with categories (gender)",
-        "description": "Simple example of a SummaryObservation using components to capture counts of different categories (male, female and missing)",
-        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation"
+        "name": "Example Variable Summary with categories (gender)",
+        "description": "Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)",
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/variable-summary"
       },
       {
         "extension": [
@@ -657,6 +713,34 @@
         },
         "name": "Example Group for Summary Results",
         "description": "We only have a single patient",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchStudy/research-study-cmg"
+        },
+        "name": "Center for Mendelian Genomics (CMG)",
+        "description": "Center for Mendelian Genomics (CMG) - An example of a Multi-Center Study",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchStudy/research-study-phs000711"
+        },
+        "name": "Baylor Hopkings Center CMG",
+        "description": "Baylor Hopkins Center for Mendelian Genomics (BH CMG) - Example Research Study representing a Specific study under the CMG umbrella",
         "exampleBoolean": true
       }
     ],

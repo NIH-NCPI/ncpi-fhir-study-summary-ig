@@ -18,8 +18,12 @@
     ],
     "Observation": [
       {
-        "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation",
-        "title": "Summary Observation"
+        "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary",
+        "title": "Study Summary"
+      },
+      {
+        "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/variable-summary",
+        "title": "Variable Summary"
       }
     ]
   },

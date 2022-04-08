@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NCPI-FHIR-STUDY-SUMMARY-IG\Summary Observation - Mappings - FHIR v4.0.1</title>
+    <title>NCPI-FHIR-STUDY-SUMMARY-IG\Study Summary - Mappings - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -97,6 +97,9 @@
       <li>
         <a href="summary_data.html">Summary Data</a>
       </li>
+      <li>
+        <a href="row_level_data.html">Row Level Data</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -130,7 +133,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Summary Observation</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Study Summary</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -160,13 +163,13 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-summary-observation.html">Content</a>
+    <a href="StructureDefinition-study-summary.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-summary-observation-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-study-summary-definitions.html">Detailed Descriptions</a>
   </li>
 
 
@@ -183,7 +186,7 @@
   
     
       <li>
-        <a href="StructureDefinition-summary-observation-examples.html">Examples</a>
+        <a href="StructureDefinition-study-summary-examples.html">Examples</a>
       </li>
     
   
@@ -193,21 +196,21 @@
 
   
     <li>
-      <a href="StructureDefinition-summary-observation.profile.xml.html">XML</a>
+      <a href="StructureDefinition-study-summary.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-summary-observation.profile.json.html">JSON</a>
+      <a href="StructureDefinition-study-summary.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-summary-observation.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-study-summary.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -216,7 +219,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: SummaryObservation - Mappings</h2>
+<h2 id="root">Resource Profile: StudySummary - Mappings</h2>
   <table class="colsd">
     <tr>
 
@@ -224,7 +227,7 @@
         
           Draft
           
-            as of 2022-04-07
+            as of 2022-04-08
           
         
       </td>
@@ -233,7 +236,7 @@
   </table>
 
 
-<p>Mappings for the summary-observation resource profile.</p>
+<p>Mappings for the study-summary resource profile.</p>
 
   <!-- insert intro if present -->
   
@@ -241,7 +244,7 @@
 
 
   <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>SummaryObservation</b></td></tr>
+ <tr><td colspan="3"><b>StudySummary</b></td></tr>
  <tr><td>Observation</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Event.basedOn</td> </tr>
@@ -254,12 +257,11 @@
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Event.performer.actor</td> </tr>
 </table>
 <a name="sct-concept"> </a><h3>Mappings for SNOMED CT Concept Domain Binding (http://snomed.info/conceptdomain)</h3><table class="grid">
- <tr><td colspan="3"><b>SummaryObservation</b></td></tr>
+ <tr><td colspan="3"><b>StudySummary</b></td></tr>
  <tr><td>Observation</td><td>&lt; 363787002 |Observable entity|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>&lt; 445584004 |Report by finality status|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>&lt; 363787002 |Observable entity| OR &lt; 386053000 |Evaluation procedure|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>&lt; 441742003 |Evaluation finding|</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>&lt; 441742003 |Evaluation finding|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>&lt; 260245000 |Findings values|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>&lt; 123037004 |Body structure|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>&lt; 123038009 |Specimen|</td> </tr>
@@ -273,7 +275,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interpretation</td><td>&lt; 260245000 |Findings values|</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>SummaryObservation</b></td></tr>
+ <tr><td colspan="3"><b>StudySummary</b></td></tr>
  <tr><td>Observation</td><td>OBX</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>ORC</td> </tr>
@@ -289,7 +291,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;issued</td><td>OBR.22 (or MSH.7), or perhaps OBX-19 (depends on who observation made)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>OBX.15 / (Practitioner)  OBX-16,  PRT-5:PRT-4='RO' /  (Device)  OBX-18 , PRT-10:PRT-4='EQUIP' / (Organization)  OBX-23,  PRT-8:PRT-4='PO'</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>OBX-8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)</td> </tr>
@@ -313,7 +314,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;referenceRange</td><td>OBX.7</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>SummaryObservation</b></td></tr>
+ <tr><td colspan="3"><b>StudySummary</b></td></tr>
  <tr><td>Observation</td><td>Entity. Role, or Act, Observation[classCode=OBS, moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
@@ -336,7 +337,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;issued</td><td>participation[typeCode=AUT].time</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>participation[typeCode=PRF]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>value.nullFlavor</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>interpretationCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>subjectOf.observationEvent[code=&quot;annotation&quot;].value</td> </tr>
@@ -367,7 +367,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;referenceRange</td><td>outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>SummaryObservation</b></td></tr>
+ <tr><td colspan="3"><b>StudySummary</b></td></tr>
  <tr><td>Observation</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
@@ -383,11 +383,10 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>FiveWs.what[x]</td> </tr>
 </table>
 <a name="sct-attr"> </a><h3>Mappings for SNOMED CT Attribute Binding (http://snomed.org/attributebinding)</h3><table class="grid">
- <tr><td colspan="3"><b>SummaryObservation</b></td></tr>
+ <tr><td colspan="3"><b>StudySummary</b></td></tr>
  <tr><td>Observation</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>116680003 |Is a|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>363714003 |Interprets|</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>363714003 |Interprets|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>363713009 |Has interpretation|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>718497002 |Inherent location|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>704319004 |Inherent in|</td> </tr>
@@ -449,7 +448,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/include-dcc">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Study-Summary-IG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 7, 2022 22:04+0000">2022-04-07</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/include-dcc">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Study-Summary-IG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 8, 2022 17:59+0000">2022-04-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -61,11 +61,18 @@
     "name": "StudyDdVariable"
   },
   {
-    "id": "summary-observation",
+    "id": "study-summary",
     "type": "StructureDefinition",
-    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-observation",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary",
     "version": "0.1.0",
-    "name": "SummaryObservation"
+    "name": "StudySummary"
+  },
+  {
+    "id": "variable-summary",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/variable-summary",
+    "version": "0.1.0",
+    "name": "VariableSummary"
   },
   {
     "id": "example-case-control-vs-1",
@@ -73,5 +80,12 @@
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ValueSet/example-case-control-vs-1",
     "version": "0.1.0",
     "name": "ExampleCaseControlVS1"
+  },
+  {
+    "id": "ncpi",
+    "type": "CodeSystem",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+    "version": "0.1.0",
+    "name": "Ncpi"
   }
 ]

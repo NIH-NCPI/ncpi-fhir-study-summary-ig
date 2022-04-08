@@ -93,6 +93,9 @@
       <li>
         <a href="summary_data.html">Summary Data</a>
       </li>
+      <li>
+        <a href="row_level_data.html">Row Level Data</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -204,8 +207,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-summary-observation.html"
-                     title="StructureDefinition/summary-observation">Summary Observation</a>
+                  <a href="StructureDefinition-study-summary.html"
+                     title="StructureDefinition/study-summary">Study Summary</a>
+               </td>
+               <td>
+<p>An observation containing summary data associated with research data from FHIR</p>
+
+<p>The code <em>MUST</em> indicate that it is a summary and the subject <em>MUST</em> point to the group of 
+participants if the summary doesn’t pertain to the entire study.</p>
+
+<p>The StudySummary <em>MUST</em> reference a study in the focus.</p>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-variable-summary.html"
+                     title="StructureDefinition/variable-summary">Variable Summary</a>
                </td>
                <td>
 <p>An observation containing summary data associated with research data from FHIR</p>
@@ -285,6 +303,14 @@ participants to which the observation is based on.</p>
 <p>Example Data Table with 4 variables</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-ncpi.html" title="CodeSystem/ncpi">NCPI FHIR Codes</a>
+               </td>
+               <td>
+<p>Codes that would apply to NCPI projects</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -297,6 +323,24 @@ participants to which the observation is based on.</p>
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-anvil-summary-cmg.html"
+                     title="Observation/anvil-summary-cmg">Summary detail for Center for Mendelian Genomics</a>
+               </td>
+               <td>
+<p>Summary detail for Center for Mendelian Genomics</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-anvil-summary-phs000711.html"
+                     title="Observation/anvil-summary-phs000711">Baylor Hopkins Center for Mendelian Genomics (BH CMG)</a>
+               </td>
+               <td>
+<p>Baylor Hopkins Center for Mendelian Genomics (BH CMG)</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Condition-example-rl-condition-1.html"
@@ -417,10 +461,10 @@ participants to which the observation is based on.</p>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-example-summary-gender.html"
-                     title="Observation/example-summary-gender">Example Summary Observation with categories (gender)</a>
+                     title="Observation/example-summary-gender">Example Variable Summary with categories (gender)</a>
                </td>
                <td>
-<p>Simple example of a SummaryObservation using components to capture counts of different categories (male, female and missing)</p>
+<p>Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)</p>
 </td>
             </tr>
             <tr>
@@ -430,6 +474,24 @@ participants to which the observation is based on.</p>
                </td>
                <td>
 <p>We only have a single patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ResearchStudy-research-study-cmg.html"
+                     title="ResearchStudy/research-study-cmg">Center for Mendelian Genomics (CMG)</a>
+               </td>
+               <td>
+<p>Center for Mendelian Genomics (CMG) - An example of a Multi-Center Study</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ResearchStudy-research-study-phs000711.html"
+                     title="ResearchStudy/research-study-phs000711">Baylor Hopkings Center CMG</a>
+               </td>
+               <td>
+<p>Baylor Hopkins Center for Mendelian Genomics (BH CMG) - Example Research Study representing a Specific study under the CMG umbrella</p>
 </td>
             </tr>
          </tbody>
@@ -459,7 +521,7 @@ participants to which the observation is based on.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/include-dcc">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Study-Summary-IG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 7, 2022 22:04+0000">2022-04-07</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/include-dcc">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Study-Summary-IG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 8, 2022 17:59+0000">2022-04-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
