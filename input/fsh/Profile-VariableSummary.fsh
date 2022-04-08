@@ -1,10 +1,10 @@
 /**
  Summary Observations record summary data associated with data-values stored in FHIR
  */
-Profile: SummaryObservation
+Profile: VariableSummary
 Parent: Observation
-Id: summary-observation
-Title: "Summary Observation"
+Id: variable-summary
+Title: "Variable Summary"
 Description: "An observation containing summary data associated with research data from FHIR
 
 The code _MUST_ indicate that it is a summary and the subject _MUST_ point to the group of 

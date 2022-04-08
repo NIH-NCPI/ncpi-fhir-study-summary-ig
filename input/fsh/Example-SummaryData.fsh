@@ -44,9 +44,9 @@ Description: "We only have a single patient"
  Summarize the Subjects' Gender
 */
 Instance: example-summary-gender
-InstanceOf: SummaryObservation 
-Title: "Example Summary Observation with categories (gender)"
-Description: "Simple example of a SummaryObservation using components to capture counts of different categories (male, female and missing)"
+InstanceOf: VariableSummary 
+Title: "Example Variable Summary with categories (gender)"
+Description: "Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)"
 * status = #final
 * code.coding = $umls#C0242482 "Summary Report"
 * valueCodeableConcept.coding = $umls#C0079399 "Gender"

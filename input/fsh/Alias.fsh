@@ -33,3 +33,11 @@ Alias: $ExampleStudyPublicMappingsVS = http://example.org/my-dataset/fhir/values
  Other Aliases
  */
 
+
+/**
+ Legacy Aliases
+ 
+ */
+
+/** This NCPI CS was put together originally as a makeshift place to define our codes. Maybe we can pull together suitable codes defined elsewhere instead? */ 
+Alias: $ncpi = https://nih-ncpi.github.io/ncpi-fhir-ig
