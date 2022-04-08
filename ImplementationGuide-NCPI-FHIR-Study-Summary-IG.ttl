@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NCPIFHIRStudySummaryIG"];
   fhir:ImplementationGuide.title [ fhir:value "NCPI FHIR Study Summary IG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-08T17:59:36+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-08T19:04:52+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
