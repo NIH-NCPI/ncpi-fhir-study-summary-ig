@@ -68,6 +68,20 @@
     "name": "StudySummary"
   },
   {
+    "id": "study-summary-group",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary-group",
+    "version": "0.1.0",
+    "name": "SummaryGroup"
+  },
+  {
+    "id": "summary-research-study",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-research-study",
+    "version": "0.1.0",
+    "name": "SummaryResearchStudy"
+  },
+  {
     "id": "variable-summary",
     "type": "StructureDefinition",
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/variable-summary",

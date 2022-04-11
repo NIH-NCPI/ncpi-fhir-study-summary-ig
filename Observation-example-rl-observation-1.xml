@@ -3,7 +3,7 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="example-rl-observation-1"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-rl-observation-1" </p></div><p><b>status</b>: final</p><p><b>code</b>: Body mass index (BMI) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LP35925-4; <a href="CodeSystem-datatable-codesystem-1.html">Datatable CodeSystem (lists all variables)</a>#bmi)</span></p><p><b>focus</b>: <a href="ObservationDefinition-example-study-dd-variable-1-4.html">ObservationDefinition/example-study-dd-variable-1-4</a></p><p><b>value</b>: 34.1 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p><p><b>note</b>: This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found. More importantly, we can directly link the observation back to the ObservationDefinition if the focus isn't otherwise needed. </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-rl-observation-1" </p></div><p><b>status</b>: final</p><p><b>code</b>: Body mass index (BMI) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LP35925-4; <a href="CodeSystem-datatable-codesystem-1.html">Datatable CodeSystem (lists all variables)</a>#bmi)</span></p><p><b>value</b>: 34.1 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p><p><b>note</b>: This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found.  </p></div>
   </text>
   <status value="final"/>
   <code>
@@ -16,9 +16,6 @@
       <code value="bmi"/>
     </coding>
   </code>
-  <focus>
-    <reference value="ObservationDefinition/example-study-dd-variable-1-4"/>
-  </focus>
   <valueQuantity>
     <value value="34.1"/>
     <unit value="kg/m2"/>
@@ -26,6 +23,6 @@
     <code value="kg/m2"/>
   </valueQuantity>
   <note>
-    <text value="This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found. More importantly, we can directly link the observation back to the ObservationDefinition if the focus isn't otherwise needed. "/>
+    <text value="This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found.  "/>
   </note>
 </Observation>

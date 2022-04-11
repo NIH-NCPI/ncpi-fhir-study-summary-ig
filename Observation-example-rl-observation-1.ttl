@@ -11,7 +11,7 @@
   fhir:Resource.id [ fhir:value "example-rl-observation-1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-rl-observation-1\" </p></div><p><b>status</b>: final</p><p><b>code</b>: Body mass index (BMI) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LP35925-4; <a href=\"CodeSystem-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#bmi)</span></p><p><b>focus</b>: <a href=\"ObservationDefinition-example-study-dd-variable-1-4.html\">ObservationDefinition/example-study-dd-variable-1-4</a></p><p><b>value</b>: 34.1 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p><p><b>note</b>: This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found. More importantly, we can directly link the observation back to the ObservationDefinition if the focus isn't otherwise needed. </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-rl-observation-1\" </p></div><p><b>status</b>: final</p><p><b>code</b>: Body mass index (BMI) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LP35925-4; <a href=\"CodeSystem-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#bmi)</span></p><p><b>value</b>: 34.1 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p><p><b>note</b>: This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found.  </p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
@@ -26,11 +26,6 @@
        fhir:Coding.code [ fhir:value "bmi" ]
      ]
   ];
-  fhir:Observation.focus [
-     fhir:index 0;
-     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ObservationDefinition/example-study-dd-variable-1-4>;
-     fhir:Reference.reference [ fhir:value "ObservationDefinition/example-study-dd-variable-1-4" ]
-  ];
   fhir:Observation.valueQuantity [
      fhir:Quantity.value [ fhir:value "34.1"^^xsd:decimal ];
      fhir:Quantity.unit [ fhir:value "kg/m2" ];
@@ -39,7 +34,7 @@
   ];
   fhir:Observation.note [
      fhir:index 0;
-     fhir:Annotation.text [ fhir:value "This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found. More importantly, we can directly link the observation back to the ObservationDefinition if the focus isn't otherwise needed. " ]
+     fhir:Annotation.text [ fhir:value "This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found.  " ]
   ] .
 
 # - ontology header ------------------------------------------------------------

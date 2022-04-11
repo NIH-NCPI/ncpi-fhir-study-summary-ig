@@ -18,12 +18,20 @@
     ],
     "Observation": [
       {
-        "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary",
-        "title": "Study Summary"
-      },
-      {
         "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/variable-summary",
         "title": "Variable Summary"
+      }
+    ],
+    "Group": [
+      {
+        "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary-group",
+        "title": "NCPI Summary Group"
+      }
+    ],
+    "ResearchStudy": [
+      {
+        "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-research-study",
+        "title": "NCPI Summary Study"
       }
     ]
   },

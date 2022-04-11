@@ -1,9 +1,9 @@
 ﻿NCPIFHIRStudySummaryIG : Validation Results
 =========================================
 
-err = 0, warn = 23, info = 16
+err = 0, warn = 24, info = 16
 IG Publisher Version: 1.1.114
-Generated Fri Apr 08 19:05:44 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
+Generated Mon Apr 11 21:20:06 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
  Build Errors : 0 / 0 / 0
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ActivityDefinition-example-study-dd-table-1 : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/CodeSystem-dataset-codesystem-1 : 0 / 0 / 2
@@ -12,7 +12,7 @@ Generated Fri Apr 08 19:05:44 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-S
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ConceptMap-example-study-dd-conceptmap-1 : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Condition-example-rl-condition-1 : 0 / 1 / 4
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Group-example-summary-group-1 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Study-Summary-IG : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Study-Summary-IG : 0 / 3 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Observation-anvil-summary-cmg : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Observation-anvil-summary-phs000711 : 0 / 7 / 2
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Observation-example-rl-observation-1 : 0 / 0 / 1
@@ -23,14 +23,13 @@ Generated Fri Apr 08 19:05:44 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-S
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-4 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-5 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-1 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-2 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-3 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-4 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ResearchStudy-research-study-cmg : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ResearchStudy-research-study-phs000711 : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-table : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-variable : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-summary : 0 / 0 / 3
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-summary-group : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-summary-research-study : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-variable-summary : 0 / 0 / 3
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-datatable-mappings-valueset-1 : 0 / 4 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-datatable-valueset-1 : 0 / 0 / 1
@@ -60,8 +59,9 @@ WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.def
 
 
 '
-WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[3].description: value should not start or finish with whitespace 'An...on.
+WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace 'An...on.
 '
+WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace 'This...found. '
 == fsh-generated/resources/Observation-anvil-summary-cmg.json ==
 INFORMATION: Observation/anvil-summary-cmg: Observation.code.coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 WARNING: Observation/anvil-summary-cmg: Observation.component[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -86,9 +86,6 @@ INFORMATION: Observation/example-summary-gender: Observation.component[2].code.c
 == fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-4.json ==
 == fsh-generated/resources/ObservationDefinition-example-study-dd-variable-1-5.json ==
 == fsh-generated/resources/Patient-example-sum-patient-1.json ==
-== fsh-generated/resources/Patient-example-sum-patient-2.json ==
-== fsh-generated/resources/Patient-example-sum-patient-3.json ==
-== fsh-generated/resources/Patient-example-sum-patient-4.json ==
 == fsh-generated/resources/ResearchStudy-research-study-cmg.json ==
 WARNING: ResearchStudy/research-study-cmg: ResearchStudy.primaryPurposeType.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ResearchStudy-research-study-phs000711.json ==
@@ -98,6 +95,8 @@ WARNING: ResearchStudy/research-study-phs000711: ResearchStudy.primaryPurposeTyp
 == fsh-generated/resources/StructureDefinition-study-summary.json ==
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-study-summary-group.json ==
+== fsh-generated/resources/StructureDefinition-summary-research-study.json ==
 == fsh-generated/resources/StructureDefinition-variable-summary.json ==
 INFORMATION: StructureDefinition/variable-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/variable-summary: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated

@@ -2,30 +2,14 @@
 
 <Group xmlns="http://hl7.org/fhir">
   <id value="example-summary-group-1"/>
+  <meta>
+    <profile value="https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary-group"/>
+  </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-summary-group-1" </p></div><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>quantity</b>: 4</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-example-sum-patient-1.html">Patient/example-sum-patient-1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-example-sum-patient-2.html">Patient/example-sum-patient-2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-example-sum-patient-3.html">Patient/example-sum-patient-3</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-example-sum-patient-4.html">Patient/example-sum-patient-4</a></p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-summary-group-1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-study-summary-group.html">NCPI Summary Group</a></p></div><p><b>active</b>: true</p><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>quantity</b>: 400</p></div>
   </text>
+  <active value="true"/>
   <type value="person"/>
   <actual value="true"/>
-  <quantity value="4"/>
-  <member>
-    <entity>
-      <reference value="Patient/example-sum-patient-1"/>
-    </entity>
-  </member>
-  <member>
-    <entity>
-      <reference value="Patient/example-sum-patient-2"/>
-    </entity>
-  </member>
-  <member>
-    <entity>
-      <reference value="Patient/example-sum-patient-3"/>
-    </entity>
-  </member>
-  <member>
-    <entity>
-      <reference value="Patient/example-sum-patient-4"/>
-    </entity>
-  </member>
+  <quantity value="400"/>
 </Group>
