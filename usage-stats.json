@@ -4,6 +4,12 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "ConceptMap": [
+      {
+        "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/harmonization-map",
+        "title": "Harmonization Map"
+      }
+    ],
     "ActivityDefinition": [
       {
         "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-table",
@@ -58,6 +64,9 @@
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [

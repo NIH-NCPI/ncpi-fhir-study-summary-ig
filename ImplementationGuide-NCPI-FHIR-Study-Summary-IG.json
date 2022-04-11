@@ -10,7 +10,7 @@
   "name": "NCPIFHIRStudySummaryIG",
   "title": "NCPI FHIR Study Summary IG",
   "status": "draft",
-  "date": "2022-04-11T21:19:53+00:00",
+  "date": "2022-04-11T21:41:41+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -345,6 +345,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/harmonization-map"
+        },
+        "name": "Harmonization Map",
+        "description": "A ConceptMap which captures the mappings from the study's variable names to their public ontological mappings",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/study-dd-table"
         },
         "name": "NCPI Study DD Data Table",
@@ -573,7 +587,7 @@
         },
         "name": "Concept Map showing representing harmonization mappings",
         "description": "Data Harmonization for example dataset",
-        "exampleBoolean": true
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/harmonization-map"
       },
       {
         "extension": [

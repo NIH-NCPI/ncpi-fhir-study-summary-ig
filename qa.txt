@@ -3,7 +3,7 @@
 
 err = 0, warn = 24, info = 16
 IG Publisher Version: 1.1.114
-Generated Mon Apr 11 21:20:23 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
+Generated Mon Apr 11 21:42:11 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
  Build Errors : 0 / 0 / 0
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ActivityDefinition-example-study-dd-table-1 : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/CodeSystem-dataset-codesystem-1 : 0 / 0 / 2
@@ -25,6 +25,7 @@ Generated Mon Apr 11 21:20:23 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-S
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/Patient-example-sum-patient-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ResearchStudy-research-study-cmg : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ResearchStudy-research-study-phs000711 : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-harmonization-map : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-table : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-variable : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-summary : 0 / 0 / 3
@@ -55,13 +56,13 @@ INFORMATION: Condition/example-rl-condition-1: Condition.code.coding[1]: Code Sy
 INFORMATION: Condition/example-rl-condition-1: Condition.code.coding[2]: Code System URI 'http://purl.obolibrary.org/obo/mondo.owl' is unknown so the code cannot be validated
 == fsh-generated/resources/Group-example-summary-group-1.json ==
 == fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Study-Summary-IG.json ==
-WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[2].description: value should not start or finish with whitespace 'An...focus. 
+WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[3].description: value should not start or finish with whitespace 'An...focus. 
 
 
 '
-WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace 'An...on.
+WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[6].description: value should not start or finish with whitespace 'An...on.
 '
-WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace 'This...found. '
+WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[16].description: value should not start or finish with whitespace 'This...found. '
 == fsh-generated/resources/Observation-anvil-summary-cmg.json ==
 INFORMATION: Observation/anvil-summary-cmg: Observation.code.coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 WARNING: Observation/anvil-summary-cmg: Observation.component[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -90,6 +91,7 @@ INFORMATION: Observation/example-summary-gender: Observation.component[2].code.c
 WARNING: ResearchStudy/research-study-cmg: ResearchStudy.primaryPurposeType.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ResearchStudy-research-study-phs000711.json ==
 WARNING: ResearchStudy/research-study-phs000711: ResearchStudy.primaryPurposeType.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/StructureDefinition-harmonization-map.json ==
 == fsh-generated/resources/StructureDefinition-study-dd-table.json ==
 == fsh-generated/resources/StructureDefinition-study-dd-variable.json ==
 == fsh-generated/resources/StructureDefinition-study-summary.json ==

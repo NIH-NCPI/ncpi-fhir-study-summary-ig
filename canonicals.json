@@ -47,6 +47,13 @@
     "name": "NCPIFHIRStudySummaryIG"
   },
   {
+    "id": "harmonization-map",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/harmonization-map",
+    "version": "0.1.0",
+    "name": "HarmonizationMap"
+  },
+  {
     "id": "study-dd-table",
     "type": "StructureDefinition",
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-dd-table",

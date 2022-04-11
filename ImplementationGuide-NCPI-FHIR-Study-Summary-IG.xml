@@ -11,7 +11,7 @@
   <name value="NCPIFHIRStudySummaryIG"/>
   <title value="NCPI FHIR Study Summary IG"/>
   <status value="draft"/>
-  <date value="2022-04-11T21:19:53+00:00"/>
+  <date value="2022-04-11T21:41:41+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -219,6 +219,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/harmonization-map"/>
+      </reference>
+      <name value="Harmonization Map"/>
+      <description value="A ConceptMap which captures the mappings from the study's variable names to their public ontological mappings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/study-dd-table"/>
       </reference>
       <name value="NCPI Study DD Data Table"/>
@@ -399,7 +410,7 @@
       </reference>
       <name value="Concept Map showing representing harmonization mappings"/>
       <description value="Data Harmonization for example dataset"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/harmonization-map"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
