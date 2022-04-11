@@ -36,13 +36,13 @@ Description: "Data Harmonization for example dataset"
 * url = "http://example.org/my-dataset/fhir/conceptmap/data-to-public"
 * sourceUri = $ExampleStudyTableVS
 * targetUri = $ExampleStudyPublicMappingsVS
-* group[0]
+* group
   * source = $ExampleStudyTableCS
   * target = $umls
-  * element[0]
+  * element
     * code = #subjectid
     * display = "Subject's Unique Identifier"
-    * target[0]
+    * target
       * code = #C2348584
       * display  = "Subject Unique Identifier"
       * equivalence = $conceptMapEquivalence#equivalent

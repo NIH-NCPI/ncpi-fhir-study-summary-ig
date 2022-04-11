@@ -14,6 +14,7 @@ Alias: $relativeDateTime = http://hl7.org/fhir/R4/extension-cqf-relativedatetime
 Alias: $conditionClinical = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $administrativeGender = http://hl7.org/fhir/administrative-gender
 Alias: $administrativeGenderVS = http://hl7.org/fhir/ValueSet/administrative-gender
+Alias: $conceptMapEquivalence = http://hl7.org/fhir/concept-map-equivalence.html
 /**
  Code System URLs
  */

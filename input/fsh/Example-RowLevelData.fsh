@@ -8,6 +8,11 @@
  For these data, we'll incorporate references from Example-SummaryData as well as Example-Dataset-DD
  */
 
+Instance: example-sum-patient-1
+InstanceOf: Patient
+Title: "Example Patient 1"
+Description: "A Patient with a small number of observations"
+* gender = #female
 
 Instance: example-rl-condition-1
 InstanceOf: Condition
