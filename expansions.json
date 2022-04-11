@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "9e3ef51c-e8dd-4ab2-96f1-af0759bd1a26",
+  "id" : "e739f3bd-6b2b-48c1-b11d-fab72e4a2c2b",
   "meta" : {
-    "lastUpdated" : "2022-04-11T21:41:41.539+00:00"
+    "lastUpdated" : "2022-04-11T21:49:34.302+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "ExampleStudyTableVS1",
       "title" : "Table ValueSet",
       "status" : "draft",
-      "date" : "2022-04-11T21:41:41+00:00",
+      "date" : "2022-04-11T21:49:34+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -38,8 +38,8 @@
       }],
       "description" : "Example Data Table with 4 variables",
       "expansion" : {
-        "identifier" : "urn:uuid:4d534e2c-cbde-4b81-9df3-ca059b21f0f3",
-        "timestamp" : "2022-04-11T21:42:02+00:00",
+        "identifier" : "urn:uuid:1c4aa396-0a12-4a85-8c7c-d2deca4ae7ea",
+        "timestamp" : "2022-04-11T21:49:57+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
