@@ -4,41 +4,18 @@
 
 /**
  In order to use the Profile, SummaryObservation, we need to create a Group which represents the patients whose data was considered.
+
+ For public servers where the summary data is open, SummaryGroups may not have any details
+ about membership
 */
-Instance: example-sum-patient-1
-InstanceOf: Patient
-Title: "Example Patient 1"
-Description: "A Patient with a small number of observations"
-* gender = #female
-
-Instance: example-sum-patient-2
-InstanceOf: Patient
-Title: "Example Patient 2"
-Description: "A Patient with no observations...just for group example"
-* gender = #male
-
-Instance: example-sum-patient-3
-InstanceOf: Patient
-Title: "Example Patient 3"
-Description: "A Patient with no observations...just for group example"
-
-Instance: example-sum-patient-4
-InstanceOf: Patient
-Title: "Example Patient 4"
-Description: "A Patient with no observations...just for group example"
-* gender = #female
 
 Instance: example-summary-group-1
-InstanceOf: Group
+InstanceOf: SummaryGroup
 Title: "Example Group for Summary Results"
 Description: "We only have a single patient"
 * type = #person
 * actual = true 
-* quantity = 4
-* member.entity = Reference(example-sum-patient-1)
-* member[1].entity = Reference(example-sum-patient-2)
-* member[2].entity = Reference(example-sum-patient-3)
-* member[3].entity = Reference(example-sum-patient-4)
+* quantity = 400
 
 /**
  Summarize the Subjects' Gender
@@ -54,10 +31,10 @@ Description: "Simple example of a VariableSummary using components to capture co
 * subject = Reference(example-summary-group-1)
 * component
   * code = $administrativeGender#female 
-  * valueInteger = 2
+  * valueInteger = 205
 * component[+]
   * code = $administrativeGender#male
-  * valueInteger = 1
+  * valueInteger = 183
 * component[+]
   * code = $umls#C1705492 "Missing"
-  * valueInteger = 1
+  * valueInteger = 12
