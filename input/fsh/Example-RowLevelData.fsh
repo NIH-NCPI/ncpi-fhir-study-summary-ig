@@ -8,6 +8,11 @@
  For these data, we'll incorporate references from Example-SummaryData as well as Example-Dataset-DD
  */
 
+Instance: example-sum-patient-1
+InstanceOf: Patient
+Title: "Example Patient 1"
+Description: "A Patient with a small number of observations"
+* gender = #female
 
 Instance: example-rl-condition-1
 InstanceOf: Condition
@@ -25,12 +30,11 @@ Description: "This is an example of linking an otherwise standard FHIR Condition
 Instance: example-rl-observation-1
 InstanceOf: Observation
 Title: "Example row-level Observation linking back to variable from the DD"
-Description: "This is an otherwise ordinary Observation except for a few extra bits linking the observation back to its variable from the data-dictionary. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found. More importantly, we can directly link the observation back to the ObservationDefinition if the focus isn't otherwise needed."
-* note.text = "This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found. More importantly, we can directly link the observation back to the ObservationDefinition if the focus isn't otherwise needed. "
+Description: "This is an otherwise ordinary Observation except for a few extra bits linking the observation back to its variable from the data-dictionary. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found. "
+* note.text = "This is an otherwise ordinary Observation except for a few extra bits of information. In addition to a meaningful public term for the code, we can also provide the code associated with the variable in which the data was found.  "
 * status = #final
 * code.coding = $loinc#LP35925-4
 * code.coding[1] = $ExampleStudyTableCS#bmi
-* focus = Reference(example-study-dd-variable-1-4)
 * valueQuantity
   * value = 34.1
   * unit = "kg/m2"

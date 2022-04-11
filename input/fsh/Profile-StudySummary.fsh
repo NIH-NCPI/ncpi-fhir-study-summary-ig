@@ -17,7 +17,7 @@ The StudySummary _MUST_ reference a study in the focus.
 * ^version = "0.1.0"
 * ^status = #draft
 * code.coding = $umls#C0242482 "Summary Report"
-* subject only Reference(Group)
+* subject only Reference(SummaryGroup)
 * focus 1.. 
-* focus only Reference(ResearchStudy) 
+* focus only Reference(SummaryResearchStudy) 
 

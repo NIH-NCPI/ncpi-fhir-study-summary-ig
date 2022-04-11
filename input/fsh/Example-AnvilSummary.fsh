@@ -38,7 +38,7 @@ Description: "Codes that would apply to NCPI projects"
  * The overall cohort
  */
 Instance: research-study-cmg
-InstanceOf: ResearchStudy
+InstanceOf: SummaryResearchStudy
 Usage: #example
 Title: "Center for Mendelian Genomics (CMG)"
 Description: "Center for Mendelian Genomics (CMG) - An example of a Multi-Center Study"
@@ -54,7 +54,7 @@ Description: "Center for Mendelian Genomics (CMG) - An example of a Multi-Center
   * text = "Mendelian"
 
 Instance: research-study-phs000711
-InstanceOf: ResearchStudy
+InstanceOf: SummaryResearchStudy
 Usage: #example
 Title: "Baylor Hopkings Center CMG"
 Description: "Baylor Hopkins Center for Mendelian Genomics (BH CMG) - Example Research Study representing a Specific study under the CMG umbrella"

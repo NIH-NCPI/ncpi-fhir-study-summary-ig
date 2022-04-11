@@ -14,5 +14,5 @@ participants to which the observation is based on.
 * ^status = #draft
 * code.coding = $umls#C0242482 "Summary Report"
 * valueCodeableConcept 1..1
-* subject only Reference(Group)
+* subject only Reference(SummaryGroup)
 

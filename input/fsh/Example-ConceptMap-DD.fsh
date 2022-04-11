@@ -36,44 +36,44 @@ Description: "Data Harmonization for example dataset"
 * url = "http://example.org/my-dataset/fhir/conceptmap/data-to-public"
 * sourceUri = $ExampleStudyTableVS
 * targetUri = $ExampleStudyPublicMappingsVS
-* group[0]
+* group
   * source = $ExampleStudyTableCS
   * target = $umls
-  * element[0]
+  * element
     * code = #subjectid
     * display = "Subject's Unique Identifier"
-    * target[0]
+    * target
       * code = #C2348584
       * display  = "Subject Unique Identifier"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#equivalent
   * element[1]
     * code = #gender
     * display = "Gender"
     * target[0]
       * code = #C0079399
       * display = "Gender"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#equivalent
   * element[2]
     * code = #age_at_enrollment
     * display = "Subject's Age at Enrollment in days"
     * target[0]
       * code = #C168843
       * display  = "Age in Days at Enrollment"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#equivalent
   * element[3]
     * code = #bmi
     * display = "Subject's BMI, Measured at Enrollment"
     * target[0]
       * code = #C1305855
       * display  = "Body mass index"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#wider
   * element[4]
     * code = #status
     * display = "Subject's status (Case or Control)"
     * target[0]
       * code = #C0872128
       * display  = "case control"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#equivalent
 * group[1]
   * source = $ExampleStudyTableCS
   * target = $loinc
@@ -83,7 +83,7 @@ Description: "Data Harmonization for example dataset"
     * target[0]
       * code = #LP35925-4
       * display  = "Body mass index (BMI)"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#wider
 * group[2]
   * source = $ExampleStudyTableCS
   * target = $hp
@@ -93,7 +93,7 @@ Description: "Data Harmonization for example dataset"
     * target[0]
       * code = #0010772
       * display  = "Anomalous pulmonary venous return"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#equivalent
 * group[3]
   * source = $ExampleStudyTableCS
   * target = $mondo
@@ -103,10 +103,10 @@ Description: "Data Harmonization for example dataset"
     * target[0]
       * code = #0017705
       * display  = "congenital pulmonary venous return anomaly"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#equivalent
     * target[1]
       * code = #0007130
       * display  = "congenital total pulmonary venous return anomaly"
-      * equivalence = #equivalent
+      * equivalence = $conceptMapEquivalence#equivalent
 
     
