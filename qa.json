@@ -3,7 +3,7 @@
   "name": "NCPIFHIRStudySummaryIG",
   "package-id": "NCPI-FHIR-Study-Summary-IG",
   "ig-ver": "0.1.0",
-  "date": "Fri, 22 Apr, 2022 15:57:10 +0000",
+  "date": "Fri, 22 Apr, 2022 15:57:32 +0000",
   "errs": 0,
   "warnings": 24,
   "hints": 18,
