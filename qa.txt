@@ -1,9 +1,9 @@
 ﻿NCPIFHIRStudySummaryIG : Validation Results
 =========================================
 
-err = 0, warn = 24, info = 16
-IG Publisher Version: 1.1.114
-Generated Mon Apr 11 21:50:07 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
+err = 0, warn = 24, info = 18
+IG Publisher Version: 1.1.115
+Generated Fri Apr 22 15:57:42 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
  Build Errors : 0 / 0 / 0
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ActivityDefinition-example-study-dd-table-1 : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/CodeSystem-dataset-codesystem-1 : 0 / 0 / 2
@@ -28,10 +28,10 @@ Generated Mon Apr 11 21:50:07 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-S
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-harmonization-map : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-table : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-variable : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-summary : 0 / 0 / 3
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-summary : 0 / 0 / 4
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-summary-group : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-summary-research-study : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-variable-summary : 0 / 0 / 3
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-variable-summary : 0 / 0 / 4
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-datatable-mappings-valueset-1 : 0 / 4 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-datatable-valueset-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-example-case-control-vs-1 : 0 / 2 / 1
@@ -97,11 +97,13 @@ WARNING: ResearchStudy/research-study-phs000711: ResearchStudy.primaryPurposeTyp
 == fsh-generated/resources/StructureDefinition-study-summary.json ==
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/study-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 == fsh-generated/resources/StructureDefinition-study-summary-group.json ==
 == fsh-generated/resources/StructureDefinition-summary-research-study.json ==
 == fsh-generated/resources/StructureDefinition-variable-summary.json ==
 INFORMATION: StructureDefinition/variable-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/variable-summary: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/variable-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 == fsh-generated/resources/ValueSet-datatable-mappings-valueset-1.json ==
 WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet.compose[0].include[2]: Unknown System specified, so Concepts and Filters can''t be checked
