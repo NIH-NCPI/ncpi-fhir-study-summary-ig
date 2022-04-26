@@ -43,6 +43,7 @@ InstanceOf: StudyDdTable
 Title: "Data-Dictionary Table"
 Description: "Example Data Table definition"
 * status = #active
+* url = $ExampleStudyTableCS
 * code.coding = $ExampleStudyDatasetCS#demographics "Demographic data"
 * topic.coding = $umls#C0035168 "Research"
 * observationResultRequirement[0] = Reference(example-study-dd-variable-1-1)

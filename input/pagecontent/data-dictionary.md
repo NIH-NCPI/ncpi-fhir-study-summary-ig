@@ -1,6 +1,6 @@
 ### The Data Dictionary
 
-The data-dictionary acts as the key to the dataset itself. Traditionally, this file is delivered alongside with flat files that are passed along to researchers and contain column names, descriptions along with other details to help the individuals doing analysis to understand how they are expected to use the data. FHIR provides descriptive resource types that can reasonably be used for the purposes of describing the variables that are found within a given dataset.
+The data-dictionary acts as the key to the dataset itself. Traditionally, this file is delivered as flat files that are passed along to researchers as part of the dataset delivery itself and contain column names, descriptions along with other details to help the individuals doing analysis to understand how they are expected to use the data. FHIR provides descriptive resource types that can reasonably be used for the purposes of describing the variables that are found within a given dataset.
 
 <img width="100%" src="ncpi-dd.png" alt="DD Resource Overview" />
 
