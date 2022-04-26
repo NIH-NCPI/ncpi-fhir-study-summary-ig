@@ -14,6 +14,12 @@
     "name": "ExampleStudyTableCS1"
   },
   {
+    "id": "example-study-dd-table-1",
+    "type": "ActivityDefinition",
+    "url": "http://example.org/my-dataset/fhir/codesystem/demographics-table",
+    "version": "0.1.0"
+  },
+  {
     "id": "example-study-dd-conceptmap-1",
     "type": "ConceptMap",
     "url": "http://example.org/my-dataset/fhir/conceptmap/data-to-public",
@@ -32,12 +38,6 @@
     "url": "http://example.org/my-dataset/fhir/valueset/mappings",
     "version": "0.1.0",
     "name": "ExampleStudyTableMappingsVS1"
-  },
-  {
-    "id": "example-study-dd-table-1",
-    "type": "ActivityDefinition",
-    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ActivityDefinition/example-study-dd-table-1",
-    "version": "0.1.0"
   },
   {
     "id": "NCPI-FHIR-Study-Summary-IG",

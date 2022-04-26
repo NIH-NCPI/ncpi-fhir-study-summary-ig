@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="17d65a6e-c68f-489d-844f-f1adf0448e92"/>
+  <id value="77cd09d1-af79-4ed4-91a9-99e2831ead80"/>
   <meta>
-    <lastUpdated value="2022-04-22T15:57:32.701+00:00"/>
+    <lastUpdated value="2022-04-26T17:19:32.457+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -75,7 +75,7 @@
         <name value="ExampleStudyTableVS1"/>
         <title value="Table ValueSet"/>
         <status value="draft"/>
-        <date value="2022-04-22T15:57:32+00:00"/>
+        <date value="2022-04-26T17:19:32+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -94,8 +94,8 @@
         </contact>
         <description value="Example Data Table with 4 variables"/>
         <expansion>
-          <identifier value="urn:uuid:b6ea5384-f4cb-4562-83e7-bc74f1211136"/>
-          <timestamp value="2022-04-22T15:57:55+00:00"/>
+          <identifier value="urn:uuid:7784bf9a-cff6-4e31-9552-7f5b39fb74e6"/>
+          <timestamp value="2022-04-26T17:19:53+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
