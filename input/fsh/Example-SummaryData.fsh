@@ -10,9 +10,9 @@
 */
 
 Instance: example-summary-group-1
-InstanceOf: SummaryGroup
-Title: "Example Group for Summary Results"
-Description: "We only have a single patient"
+InstanceOf: NcpiGroup
+Title: "Example Group used for Summary Results"
+Description: "Just an example group for demonstrational purposes"
 * type = #person
 * actual = true 
 * quantity = 400
