@@ -14,12 +14,6 @@
     "name": "ExampleStudyTableCS1"
   },
   {
-    "id": "example-study-dd-table-1",
-    "type": "ActivityDefinition",
-    "url": "http://example.org/my-dataset/fhir/codesystem/demographics-table",
-    "version": "0.1.0"
-  },
-  {
     "id": "example-study-dd-conceptmap-1",
     "type": "ConceptMap",
     "url": "http://example.org/my-dataset/fhir/conceptmap/data-to-public",
@@ -40,6 +34,12 @@
     "name": "ExampleStudyTableMappingsVS1"
   },
   {
+    "id": "example-study-dd-table-1",
+    "type": "ActivityDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ActivityDefinition/example-study-dd-table-1",
+    "version": "0.1.0"
+  },
+  {
     "id": "NCPI-FHIR-Study-Summary-IG",
     "type": "ImplementationGuide",
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/ImplementationGuide/NCPI-FHIR-Study-Summary-IG",
@@ -52,6 +52,20 @@
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/harmonization-map",
     "version": "0.1.0",
     "name": "HarmonizationMap"
+  },
+  {
+    "id": "ncpi-group",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-group",
+    "version": "0.1.0",
+    "name": "NcpiGroup"
+  },
+  {
+    "id": "ncpi-research-study",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-research-study",
+    "version": "0.1.0",
+    "name": "NcpiResearchStudy"
   },
   {
     "id": "study-dd-table",
@@ -73,20 +87,6 @@
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary",
     "version": "0.1.0",
     "name": "StudySummary"
-  },
-  {
-    "id": "study-summary-group",
-    "type": "StructureDefinition",
-    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary-group",
-    "version": "0.1.0",
-    "name": "SummaryGroup"
-  },
-  {
-    "id": "summary-research-study",
-    "type": "StructureDefinition",
-    "url": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-research-study",
-    "version": "0.1.0",
-    "name": "SummaryResearchStudy"
   },
   {
     "id": "variable-summary",

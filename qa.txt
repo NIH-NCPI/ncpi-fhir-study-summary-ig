@@ -3,8 +3,8 @@
 
 err = 0, warn = 24, info = 18
 IG Publisher Version: 1.1.115
-Generated Tue Apr 26 17:21:16 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
- Build Errors : 0 / 0 / 0
+Generated Tue Apr 26 22:46:02 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-Summary-IG#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig)
+ Build Errors : 2 / 0 / 0
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ActivityDefinition-example-study-dd-table-1 : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/CodeSystem-dataset-codesystem-1 : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/CodeSystem-datatable-codesystem-1 : 0 / 0 / 2
@@ -26,17 +26,19 @@ Generated Tue Apr 26 17:21:16 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Study-S
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ResearchStudy-research-study-cmg : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ResearchStudy-research-study-phs000711 : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-harmonization-map : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-ncpi-group : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-ncpi-research-study : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-table : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-dd-variable : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-summary : 0 / 0 / 4
- /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-study-summary-group : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-summary-research-study : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/StructureDefinition-variable-summary : 0 / 0 / 4
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-datatable-mappings-valueset-1 : 0 / 4 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-datatable-valueset-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/fsh-generated/resources/ValueSet-example-case-control-vs-1 : 0 / 2 / 1
 </table>
 == n/a ==
+ERROR: /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/output/StructureDefinition-study-summary.html#/html/body/div/div/div/div/div/div/p/a at Line 291, column 131: The link 'StructureDefinition-summary-research-study.html' for "SummaryResearchStudy" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-study-summary-ig/ncpi-fhir-study-summary-ig/output/StructureDefinition-study-summary.html#/html/body/div/div/div/div/div/div/p/a at Line 293, column 50: The link 'StructureDefinition-study-summary-group.html' for "SummaryGroup" cannot be resolved
 == fsh-generated/resources/ActivityDefinition-example-study-dd-table-1.json ==
 WARNING: ActivityDefinition/example-study-dd-table-1: ActivityDefinition: adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 INFORMATION: ActivityDefinition/example-study-dd-table-1: ActivityDefinition.topic[0].coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
@@ -56,7 +58,7 @@ INFORMATION: Condition/example-rl-condition-1: Condition.code.coding[1]: Code Sy
 INFORMATION: Condition/example-rl-condition-1: Condition.code.coding[2]: Code System URI 'http://purl.obolibrary.org/obo/mondo.owl' is unknown so the code cannot be validated
 == fsh-generated/resources/Group-example-summary-group-1.json ==
 == fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Study-Summary-IG.json ==
-WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[3].description: value should not start or finish with whitespace 'An...focus. 
+WARNING: ImplementationGuide/NCPI-FHIR-Study-Summary-IG: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace 'An...focus. 
 
 
 '
@@ -92,14 +94,14 @@ WARNING: ResearchStudy/research-study-cmg: ResearchStudy.primaryPurposeType.codi
 == fsh-generated/resources/ResearchStudy-research-study-phs000711.json ==
 WARNING: ResearchStudy/research-study-phs000711: ResearchStudy.primaryPurposeType.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/StructureDefinition-harmonization-map.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-group.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-research-study.json ==
 == fsh-generated/resources/StructureDefinition-study-dd-table.json ==
 == fsh-generated/resources/StructureDefinition-study-dd-variable.json ==
 == fsh-generated/resources/StructureDefinition-study-summary.json ==
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
-== fsh-generated/resources/StructureDefinition-study-summary-group.json ==
-== fsh-generated/resources/StructureDefinition-summary-research-study.json ==
 == fsh-generated/resources/StructureDefinition-variable-summary.json ==
 INFORMATION: StructureDefinition/variable-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/variable-summary: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated

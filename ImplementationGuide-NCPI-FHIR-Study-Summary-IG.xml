@@ -11,7 +11,7 @@
   <name value="NCPIFHIRStudySummaryIG"/>
   <title value="NCPI FHIR Study Summary IG"/>
   <status value="draft"/>
-  <date value="2022-04-26T17:20:41+00:00"/>
+  <date value="2022-04-26T22:45:35+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -230,6 +230,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ncpi-group"/>
+      </reference>
+      <name value="NCPI Group"/>
+      <description value="Represent a group of research subjects, either the entire study's population or a subgroup such as an individual consent group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-research-study"/>
+      </reference>
+      <name value="NCPI Research Study"/>
+      <description value="Represent a research study."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/study-dd-table"/>
       </reference>
       <name value="NCPI Study DD Data Table"/>
@@ -256,28 +278,6 @@
       </reference>
       <name value="Study Summary"/>
       <description value="An observation containing summary data associated with research data from FHIR&#xA;&#xA;The code _MUST_ indicate that it is a summary and the subject _MUST_ point to the group of &#xA;participants if the summary doesn't pertain to the entire study. &#xA;&#xA;The StudySummary _MUST_ reference a study in the focus. &#xA;&#xA;&#xA;"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/study-summary-group"/>
-      </reference>
-      <name value="NCPI Summary Group"/>
-      <description value="Represent a group of research subjects, either the entire study's population or a subgroup such as an individual consent group"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/summary-research-study"/>
-      </reference>
-      <name value="NCPI Summary Study"/>
-      <description value="Represent a research study within the context of summary/metadata."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -507,9 +507,9 @@
       <reference>
         <reference value="Group/example-summary-group-1"/>
       </reference>
-      <name value="Example Group for Summary Results"/>
-      <description value="We only have a single patient"/>
-      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary-group"/>
+      <name value="Example Group used for Summary Results"/>
+      <description value="Just an example group for demonstrational purposes"/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-group"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -520,7 +520,7 @@
       </reference>
       <name value="Center for Mendelian Genomics (CMG)"/>
       <description value="Center for Mendelian Genomics (CMG) - An example of a Multi-Center Study"/>
-      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-research-study"/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-research-study"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -531,7 +531,7 @@
       </reference>
       <name value="Baylor Hopkings Center CMG"/>
       <description value="Baylor Hopkins Center for Mendelian Genomics (BH CMG) - Example Research Study representing a Specific study under the CMG umbrella"/>
-      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-research-study"/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-research-study"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

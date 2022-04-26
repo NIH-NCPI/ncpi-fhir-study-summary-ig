@@ -10,7 +10,7 @@
   "name": "NCPIFHIRStudySummaryIG",
   "title": "NCPI FHIR Study Summary IG",
   "status": "draft",
-  "date": "2022-04-26T17:20:41+00:00",
+  "date": "2022-04-26T22:45:35+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -359,6 +359,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/ncpi-group"
+        },
+        "name": "NCPI Group",
+        "description": "Represent a group of research subjects, either the entire study's population or a subgroup such as an individual consent group",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncpi-research-study"
+        },
+        "name": "NCPI Research Study",
+        "description": "Represent a research study.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/study-dd-table"
         },
         "name": "NCPI Study DD Data Table",
@@ -391,34 +419,6 @@
         },
         "name": "Study Summary",
         "description": "An observation containing summary data associated with research data from FHIR\n\nThe code _MUST_ indicate that it is a summary and the subject _MUST_ point to the group of \nparticipants if the summary doesn't pertain to the entire study. \n\nThe StudySummary _MUST_ reference a study in the focus. \n\n\n",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/study-summary-group"
-        },
-        "name": "NCPI Summary Group",
-        "description": "Represent a group of research subjects, either the entire study's population or a subgroup such as an individual consent group",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/summary-research-study"
-        },
-        "name": "NCPI Summary Study",
-        "description": "Represent a research study within the context of summary/metadata.",
         "exampleBoolean": false
       },
       {
@@ -711,9 +711,9 @@
         "reference": {
           "reference": "Group/example-summary-group-1"
         },
-        "name": "Example Group for Summary Results",
-        "description": "We only have a single patient",
-        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary-group"
+        "name": "Example Group used for Summary Results",
+        "description": "Just an example group for demonstrational purposes",
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-group"
       },
       {
         "extension": [
@@ -727,7 +727,7 @@
         },
         "name": "Center for Mendelian Genomics (CMG)",
         "description": "Center for Mendelian Genomics (CMG) - An example of a Multi-Center Study",
-        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-research-study"
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-research-study"
       },
       {
         "extension": [
@@ -741,7 +741,7 @@
         },
         "name": "Baylor Hopkings Center CMG",
         "description": "Baylor Hopkins Center for Mendelian Genomics (BH CMG) - Example Research Study representing a Specific study under the CMG umbrella",
-        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/summary-research-study"
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-research-study"
       }
     ],
     "page": {

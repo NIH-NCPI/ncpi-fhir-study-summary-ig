@@ -78,7 +78,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","What this is study doing","A full description of how the study is being conducted.","","","","","","","","","",,,,,"",,,,"ResearchStudy.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","StudyProtocolDocumentVersion.publicDescription","Detailed Description"
 "ResearchStudy.enrollment","","patient
-","",0,*,"","","Y","Reference {[]} {[CanonicalType[https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/study-summary-group]]}
+","",0,*,"","","Y","Reference {[]} {[CanonicalType[https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-group]]}
 ","Inclusion & exclusion criteria","Reference to a Group that defines the criteria for and quantity of subjects participating in the study.  E.g. "" 200 female Europeans between the ages of 20 and 45 with early onset diabetes"".","The Group referenced should not generally enumerate specific subjects.  Subjects will be linked to the study using the ResearchSubject resource.","","","","","","","","",,,,,"",,,,"ResearchStudy.enrollment",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","InterventionalStudyProtocol.interventionGroupQuantity",".participation[typeCode=SBJ].role","Enrollment; Number of Groups/Cohorts (= number of ""enrollment"" instances); Groups (Group/Cohort Label = Group.name; Group/Cohort Description = Group.description); Eligibility (Group criteria)","FiveWs.subject[x]","FiveWs.subject"
 "ResearchStudy.period","","timing
